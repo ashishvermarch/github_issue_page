@@ -1,0 +1,46 @@
+
+.issueHead {
+    display: flex;
+    max-width: 1100px;
+    justify-content: space-between;
+    padding: 10px 30px;
+    border-top: 1px solid silver;
+    background-color:  rgb(233, 227, 231);
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu li{
+    display: inline-flex;
+}
+
+
+.part1 p{
+    display: inline-flex;
+}
+
+@media screen and (max-width: 915px){
+    .issueHead {
+        display: block;
+    }
+    .menu{
+        display: grid;
+        grid-template-areas: 
+        "hlii hlii"
+        "hlii hlii"
+        "hlii hlii";
+        grid-row-gap: 10px;
+        padding: 0;
+        text-align: center;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}

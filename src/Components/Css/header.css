@@ -1,0 +1,139 @@
+.headContainer{
+    background-color:  rgb(233, 227, 231);
+    margin-bottom: 50px;
+    height: 110px;
+}
+
+.headp1{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    padding-top: 10px;
+}
+
+.hp1-1{
+    display: inline-flex;
+}
+
+.hp1-1 a{
+    text-decoration: none;
+}
+
+.hp1-1 span:last-child{
+    font-weight: 600;
+    margin-left: 5px;
+    height: 25px;
+    border: 1px rgb(87, 84, 84) solid;
+    padding: 0 10px;
+    border-radius: 20px;
+}
+
+.hp1-2{
+    display: flex;
+}
+
+.c{
+    font-weight: 600;
+    display: inline-flex;
+    margin-left: 5px;
+    height: 25px;
+    border: 1px rgb(87, 84, 84) solid;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+
+.cc{
+    font-weight: 600;
+    display: inline-flex;
+    margin-left: 5px;
+    height: 25px;
+    border: 1px rgb(87, 84, 84) solid;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+.ccc{
+    display: inline-flex;
+    border-right: 1px solid rgb(87, 84, 84);
+    padding-right: 5px;
+}
+
+.ex-span{
+    padding-left: 5px;
+}
+
+.list-menu {
+    display: flex;
+}
+
+.list-menu li {
+    margin-top: 30px;
+    margin-left: 20px;
+    list-style: none;
+}
+
+.list-menu a{
+    display: inline-flex;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.list-menu span:last-child{
+    padding-left: 5px;
+}
+
+@media screen and (max-width: 920px){
+    .headContainer{
+        height: 200px;
+    }
+    .list-menu{
+        display: grid;
+        grid-template-areas: 
+        "lii lii lii lii"
+        "lii lii lii lii";
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 762px){
+    .headContainer{
+        height: 400px;
+    }
+    .list-menu{
+        display: grid;
+        grid-template-areas: 
+        "lii lii"
+        "lii lii"
+        "lii lii";
+        width: auto;
+        justify-content: space-around;
+    }
+
+    .headp1{
+        display: block;
+        text-align: center;
+    }
+    .hp1-2{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 470px){
+    .headContainer{
+        height: 400px;
+    }
+    .list-menu{
+        padding: 0;
+    }
+    .hp1-2{
+        display: grid;
+        grid-template-areas: 
+        "div"
+        "div"
+        "div";
+        grid-row-gap: 10px;
+    }
+}
